@@ -6,7 +6,7 @@ Insights and recommendations are provided on the following key areas:
 
 - **Category 1: Client Financial Status**
 - **Category 2: Demographics**
-- **Category 3: Contact and Campaign Volume
+- **Category 3: Contact and Campaign Volume**
 
 SQL queries were used to categories age groups and analyze trends in call times and peak months [link].
 
