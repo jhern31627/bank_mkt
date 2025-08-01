@@ -1,5 +1,3 @@
-# bank_mkt
-
 # Project Background
 
 The dataset works with marketing campaign data from a Portugal bank in the financial service industry. The goal was to explore customer response patterns to outbound calls promoting term deposit products (similar to U.S. CDs). Some clients received multiple contact attempts to increase conversion rate among existing customers. Key business metrics analyzed were total campaigns ran, client response rate, contact frequency, and demographic insight to clients that subscribed. 
