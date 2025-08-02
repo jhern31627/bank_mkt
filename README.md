@@ -32,7 +32,7 @@ From my analysts there seems to be several factors at play that can effect clien
 
 **Main insight 1:**
 Clients financial loyalty such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes
-	- Correlation Values: 
+	Correlation Values: 
 		- Default: -0.099
 		- Housing Loan: 0.009
 		- Personal Loan: -0.005
@@ -51,7 +51,7 @@ There was a small correlation of 8% when combining clients education and job typ
 
 **Main Insight 1:** 
 There is a strong relationship between the number of calls made and subscription behavior. We found that a negative correlation (r= -.59) showed as the number of calls increased, chances of subscriptions declined. In addition, exponential trendline yielded 
-R² = .96. This indicates the exponential model explains 96% of variation in subscription outcomes. Diminishing returns occur as continuous outreach to customers occurs. 
+R²=.96. This indicates the exponential model explains 96% of variation in subscription outcomes. Diminishing returns occur as continuous outreach to customers occurs.
 
 **Main Insight 2:** 
 Our linear regression analysis found a strong negative relationship between the number of campaigns and the number of subscriptions. Campaign volume explained 56% of the variation in "yes" responses, and the regression coefficient (-104) indicates that for each additional campaign, approximately 104 fewer clients subscribed on average. This suggests diminishing returns with high campaign frequency
