@@ -39,12 +39,19 @@ Clients financial loyalty such as personal loan, housing loan, or defaulted to t
 
 ![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/fin.png)
 ### Category 2: Demographics
+**Main Insight 1:**
+![image alt](https://github.com/jhern31627/bank_mkt/blob/0bf4bd5157ee3754c26587e0425762415c90cf9f/images/total_subs.png)
+![image alt](https://github.com/jhern31627/bank_mkt/blob/5c3fb7c25dc2b57150bb192c7426f1541894751a/images/age_group_month.png)
 
 **Main Insight 1:**
 Age demographics appears to have some influence on how well a month performs. In particular ages 29-38 seemed to be most responsive on how well a month performed. They accounted for 39% of all subscriptions. 
 
+![image alt](https://github.com/jhern31627/bank_mkt/blob/eadaf655aff02863c9c95de0ea488767a4619fd3/images/clients_saidYes.png)
+
 **Main Insight 2:**
-There was a small correlation of 8% when combining clients education and job type. Admin appeared amongst the top 3 job types in all demographics. In the age   age demographic of 29-38, admin job type accounted for 14% of job types that subscribed in this demographic 
+There was a small correlation of 8% when combining clients education and job type. Admin appeared amongst the top 3 job types in all demographics. In the age demographic of 29-38, admin job type accounted for 14% of job types that subscribed in this demographic 
+
+![image alt](https://github.com/jhern31627/bank_mkt/blob/5c3fb7c25dc2b57150bb192c7426f1541894751a/images/topJobs.png)
 
 
 ### Category 3: Contact and Campaign Volume
