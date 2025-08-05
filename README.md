@@ -8,7 +8,7 @@ Insights and recommendations are provided on the following key areas:
 - **Category 2: Demographics**
 - **Category 3: Contact and Campaign Volume**
 
-SQL queries were used to categories age groups and analyze trends in call times and peak months [link].
+SQL queries were used to categories age groups and analyze trends in call times and peak months [link](https://github.com/jhern31627/bank_mkt/blob/601a5cd9396b033d34e7c77debaeda286579f35a/bank_mkt.sql).
 
 # Data Structure & Initial Checks
 
