@@ -31,13 +31,13 @@ From my analysts there seems to be several factors at play that can effect clien
 ### Category 1: Client Financial Loyalty
 
 **Main insight 1:**
-Clients financial loyalty such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes
-	Correlation Values: 
-		-Default: -0.099
-		-Housing Loan: 0.009
-		-Personal Loan: -0.005
+Clients financial loyalty such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes<br><br>
+**Correlation Values:**
+- Default: -0.099
+- Housing Loan: 0.009
+- Personal Loan: -0.005
 
-
+![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/fin.png)
 ### Category 2: Demographics
 
 **Main Insight 1:**
@@ -53,12 +53,14 @@ There was a small correlation of 8% when combining clients education and job typ
 There is a strong relationship between the number of calls made and subscription behavior. We found that a negative correlation (r= -.59) showed as the number of calls increased, chances of subscriptions declined. In addition, exponential trendline yielded 
 R²=.96. This indicates the exponential model explains 96% of variation in subscription outcomes. Diminishing returns occur as continuous outreach to customers occurs.
 
+![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/frequency.png)
 **Main Insight 2:** 
-Our linear regression analysis found a strong negative relationship between the number of campaigns and the number of subscriptions. Campaign volume explained 56% of the variation in "yes" responses, and the regression coefficient (-104) indicates that for each additional campaign, approximately 104 fewer clients subscribed on average. This suggests diminishing returns with high campaign frequency
+Linear regression analysis found a strong negative relationship between the number of campaigns and the number of subscriptions. Campaign volume explained 56% of the variation in "yes" responses, and the regression coefficient (-104) indicates that for each additional campaign, approximately 104 fewer clients subscribed on average. This suggests diminishing returns with high campaign frequency
 
 **Main Insight 3:**
 An analysis of 1,544 calls revealed a statistically significant negative relationship between call duration and subscription likelihood. Each additional minute on a call was associated with a 0.15 decrease in the probability of a client subscribing (coefficient = -0.00242). While the effect per minute is small, it becomes more meaningful as call times increase. Overall, call duration explained 26% of the variation in subscription outcomes, indicating that longer calls may be less effective.
 
+![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/camp_vol.png)
 
 # Recommendations 
 
