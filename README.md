@@ -9,7 +9,7 @@ Insights and recommendations are provided on the following key areas:
 - **Category 3: Contact and Campaign Volume**
 
 SQL queries were used to categories age groups and analyze trends in call times and peak months [link](https://github.com/jhern31627/bank_mkt/blob/601a5cd9396b033d34e7c77debaeda286579f35a/bank_mkt.sql).
-
+Dashboard used to report exploraitiry analysis of demographics and call times [link]
 # Data Structure & Initial Checks
 
 The main dataset consist of 1 table and 2 reference tables . First table contains the core campaign data, reference table 1 displays clients job types and reference table 2 showcases clients highest level of education 
