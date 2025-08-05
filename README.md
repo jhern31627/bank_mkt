@@ -33,9 +33,9 @@ From my analysts there seems to be several factors at play that can effect clien
 **Main insight 1:**
 Clients financial loyalty such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes
 	Correlation Values: 
-		- Default: -0.099
-		- Housing Loan: 0.009
-		- Personal Loan: -0.005
+		-Default: -0.099
+		-Housing Loan: 0.009
+		-Personal Loan: -0.005
 
 
 ### Category 2: Demographics
