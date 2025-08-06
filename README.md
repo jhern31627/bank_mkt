@@ -8,7 +8,7 @@ Insights and recommendations are provided on the following key areas:
 - **Category 2: Demographics and Monthly Subscription Trends**
 - **Category 3: Contact and Campaign Volume**
 
-Main Dataset, Pivot Tables, and Statistical Test in Excel [link]
+Main Dataset, Pivot Tables, and Statistical Test in Excel [link](https://github.com/jhern31627/bank_mkt/blob/66ff34a2a56b1cfd0fcab862c76fa786dea14354/bank_mkt.xlsx)
 
 SQL queries were used to categories age groups and analyze trends in call times and peak months [link](https://github.com/jhern31627/bank_mkt/blob/601a5cd9396b033d34e7c77debaeda286579f35a/bank_mkt.sql).
 
