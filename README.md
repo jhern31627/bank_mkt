@@ -5,11 +5,12 @@ The dataset works with marketing campaign data from a Portugal bank in the finan
 Insights and recommendations are provided on the following key areas:
 
 - **Category 1: Client Financial Status**
-- **Category 2: Demographics**
+- **Category 2: Demographics and Monthly Subscription Trends**
 - **Category 3: Contact and Campaign Volume**
 
 SQL queries were used to categories age groups and analyze trends in call times and peak months [link](https://github.com/jhern31627/bank_mkt/blob/601a5cd9396b033d34e7c77debaeda286579f35a/bank_mkt.sql).
-Dashboard used to report exploraitiry analysis of demographics and call times [link]
+
+Dashboard used to report exploratory analysis of demographics and call times [link]
 # Data Structure & Initial Checks
 
 The main dataset consist of 1 table and 2 reference tables . First table contains the core campaign data, reference table 1 displays clients job types and reference table 2 showcases clients highest level of education 
@@ -23,7 +24,11 @@ The main dataset consist of 1 table and 2 reference tables . First table contain
 
 ### Overview of Findings
 
-From my analysts there seems to be several factors at play that can effect clients subscription behavior. Financial indicators such as personal loans, housing loans, or default history had little impact on whether a client subscribed. However, age and call duration played a small to moderate role in subscription behavior. Clients ages between 29-38 were key drivers of monthly performance, accounting for 43% of subscriptions in March. A slight trend was also observed by job types job type, with blue-collar workers, technicians, and administrative roles ranking among the highest across all age groups. Notably, repeat contact with the same client has a negative impact on clients decisions. However, focus on call duration should be taken into account as 20 minute or less seems to be when clients where more willing to subscribe. 
+From my analysts there seems to be several factors at play that can affect clients subscription behavior. Financial indicators such as personal loans, housing loans, or default history had little impact on whether a client subscribed. However, age and call duration played a small to moderate role in subscription behavior. 
+
+Clients ages between 29-38 were key influencers for monthly performance, accounting for 43% of all subscriptions in March due to the large population size. However, the Chi-Square test revealed that younger ages (17-28) and older ages (59+) subscribed at higher-than-expected rates relative to their group size. This suggests a stronger conversion potential within these age demographics.
+
+A slight trend was also observed by job types job type, with blue-collar workers, technicians, and administrative roles ranking among the highest across all age groups. Notably, repeat contact with the same client has a negative impact on clients decisions. However, focus on call duration should be taken into account as 20 minute or less seems to be when clients were more willing to subscribe. 
 
 
 # Insight Deep Dive 
@@ -31,28 +36,31 @@ From my analysts there seems to be several factors at play that can effect clien
 ### Category 1: Client Financial Loyalty
 
 **Main insight 1:**
-Clients financial loyalty such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes<br><br>
+Clients financial loyalty to the bank such as personal loan, housing loan, or defaulted to the bank did not have strong correlation with subscription outcomes<br><br>
 **Correlation Values:**
 - Default: -0.099
 - Housing Loan: 0.009
 - Personal Loan: -0.005
 
-![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/fin.png)
-### Category 2: Demographics
+![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/fin.png)<br><br>
+### Category 2: Demographics and Monthly Subscription Trends
 **Main Insight 1:**
-![image alt](https://github.com/jhern31627/bank_mkt/blob/0bf4bd5157ee3754c26587e0425762415c90cf9f/images/total_subs.png)
+Subscription behavior varied significantly across both ages demographics and months. Months of May, August, and July showed the highest total subscriptions, with May having the highest at 886 subscriptions. 
+
+Across all months the age demographic of 29-38 contributed the largest share of subscriptions, making this age group the key driver of monthly performance. In May, this age group (29-38) had 374 out of 886 subscriptions (42%). However, closer analysis revealed other age groups had a stronger part in current months: 
+
+- 17-28 showed strong performance in spring, peaking at 130 subscriptions in May. 
+- 59+ had notable contributions in the months of October and August, with 64 and 87 subscriptions. This showed an increase in responsiveness despite the smaller group size. 
+
+The patterns indicate that, while the 29-38 age group remains the dominant segment based on volume, other age groups show meaningful contribution during certain months. Seasonal outreach to younger and older crowds could boost campaign effectiveness, especially in high performance months. 
+
+![image alt](https://github.com/jhern31627/bank_mkt/blob/57e183ebde9acd147b2dedc6b0e10fa8730d4186/images/chi_test.png)<br><br>
 ![image alt](https://github.com/jhern31627/bank_mkt/blob/5c3fb7c25dc2b57150bb192c7426f1541894751a/images/age_group_month.png)
 
-**Main Insight 1:**
-Age demographics appears to have some influence on how well a month performs. In particular ages 29-38 seemed to be most responsive on how well a month performed. They accounted for 39% of all subscriptions. 
+<br><br>**Main Insight 2:**
+There was a small correlation when combining clients' education (0.057) and job type (0.025) together, accounting for 8% correlation. Despite jobs having a low correlation (0.025) to subscription behavior, repeat job titles were among the top 3 of all the age demographics. Job types  of admin, technician, and blue-collar, where among one of the top job types in each age demographics. Further analysis should be done to see if job type has more of a significance to subscription behavior. <br><br>
 
-![image alt](https://github.com/jhern31627/bank_mkt/blob/eadaf655aff02863c9c95de0ea488767a4619fd3/images/clients_saidYes.png)
-
-**Main Insight 2:**
-There was a small correlation of 8% when combining clients education and job type. Admin appeared amongst the top 3 job types in all demographics. In the age demographic of 29-38, admin job type accounted for 14% of job types that subscribed in this demographic 
-
-![image alt](https://github.com/jhern31627/bank_mkt/blob/5c3fb7c25dc2b57150bb192c7426f1541894751a/images/topJobs.png)
-
+![image alt](https://github.com/jhern31627/bank_mkt/blob/60dc62954fd133ad99af364978a332b7167313c5/images/topJobs.png)
 
 ### Category 3: Contact and Campaign Volume
 
@@ -60,7 +68,7 @@ There was a small correlation of 8% when combining clients education and job typ
 There is a strong relationship between the number of calls made and subscription behavior. We found that a negative correlation (r= -.59) showed as the number of calls increased, chances of subscriptions declined. In addition, exponential trendline yielded 
 R²=.96. This indicates the exponential model explains 96% of variation in subscription outcomes. Diminishing returns occur as continuous outreach to customers occurs.
 
-![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/frequency.png)
+![image alt](https://github.com/jhern31627/bank_mkt/blob/2052f2a686f589e389448dc4eb48d9a93ab810db/images/frequency.png)<br><br>
 **Main Insight 2:** 
 Linear regression analysis found a strong negative relationship between the number of campaigns and the number of subscriptions. Campaign volume explained 56% of the variation in "yes" responses, and the regression coefficient (-104) indicates that for each additional campaign, approximately 104 fewer clients subscribed on average. This suggests diminishing returns with high campaign frequency
 
@@ -73,7 +81,8 @@ An analysis of 1,544 calls revealed a statistically significant negative relatio
 
 Based on the insights and findings above, we would recommend the **Marketing Strategy Team** to consider the following:
 
-- Clients aged 29–38 consistently showed the highest subscription rates, accounting for 40% of sign-ups. We recommend targeting this age group more heavily in future campaigns to maximize conversion potential.
+- The 29-38 age group accounted for the largest share of total subscriptions (40%). However, the Chi-Square test showed that younger age groups (17-28) and older age groups (59+) subscribed at higher rates relative to their group size. We recommend continuing to target the 29-38 age demographic based on the volume, but campaign efforts should also focus on younger and older age groups, who may offer higher conversion rates.
+
 
 - Job types appears to have a modest effect on clients willingness to subscribe, particularly among blue-collar, technician, and administrative roles. Our suggestion is incorporating job type segmentation into campaign planning to better tailor messaging. 
 
